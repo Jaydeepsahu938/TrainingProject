@@ -12,6 +12,9 @@
         android:theme="@style/Theme.TraineeingProject"
         tools:targetApi="31">
         <activity
+            android:name=".BMIApp"
+            android:exported="false" />
+        <activity
             android:name=".GeussMyNumber"
             android:exported="false" />
         <activity

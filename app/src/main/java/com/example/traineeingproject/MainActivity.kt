@@ -48,5 +48,10 @@ class MainActivity : AppCompatActivity() {
             val Intent = Intent(this,GeussMyNumber::class.java)
             startActivity(Intent)
         }
+        val btn_BMIapp = findViewById<Button>(R.id.btn8)
+        btn_BMIapp.setOnClickListener {
+            val Intent = Intent(this, BMIApp::class.java)
+            startActivity(Intent)
+        }
     }
 }
