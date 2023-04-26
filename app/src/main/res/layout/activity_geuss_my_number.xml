@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeussMyNumber">
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="sans-serif"
+        android:textSize="25sp"
+        tools:text="question" />
+
+    <TextView
+        android:id="@+id/tv_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/success_textview"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_targetNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_success"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        tools:text="our number"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/btn_reset"
+        android:onClick="resetbtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:text="@string/reset_button_string"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_above="@+id/btn_reset"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:weightSum="6"
+        >
+        <ImageView
+            android:id="@+id/btn_down"
+            android:onClick="arrowDownbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/downward_arrow"
+            android:layout_weight="2"
+            />
+        <ImageView
+            android:id="@+id/btn_success"
+            android:onClick="Successbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/success"
+            android:layout_weight="2"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:onClick="arrowUpbtn"
+            android:layout_height="wrap_content"
+            android:src="@drawable/upward_arrow"
+            android:layout_weight="2"
+            />
+    </LinearLayout>
+</RelativeLayout>
