@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import java.util.Dictionary
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,6 +52,16 @@ class MainActivity : AppCompatActivity() {
         val btn_BMIapp = findViewById<Button>(R.id.btn8)
         btn_BMIapp.setOnClickListener {
             val Intent = Intent(this, BMIApp::class.java)
+            startActivity(Intent)
+        }
+        val btn_NumberListApp = findViewById<Button>(R.id.btn9)
+        btn_NumberListApp.setOnClickListener {
+            val Intent = Intent(this, NumberListApp::class.java)
+            startActivity(Intent)
+        }
+        val btn_DictionaryApp = findViewById<Button>(R.id.btn10)
+        btn_DictionaryApp.setOnClickListener {
+            val Intent = Intent(this, DictionaryApp::class.java)
             startActivity(Intent)
         }
     }

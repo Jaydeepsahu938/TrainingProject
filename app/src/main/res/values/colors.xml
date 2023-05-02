@@ -13,4 +13,7 @@
     <color name="clr4">#FF8C00</color>
     <color name="clr5">#FF0000</color>
     <color name="clr6">#FF1493</color>
+
+    <color name="edit_text_border">#ffdd99</color>
+    <color name="background_edit_text">#fff7e9</color>
 </resources>

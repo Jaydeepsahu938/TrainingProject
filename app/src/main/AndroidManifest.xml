@@ -12,6 +12,15 @@
         android:theme="@style/Theme.TraineeingProject"
         tools:targetApi="31">
         <activity
+            android:name=".Defination"
+            android:exported="false" />
+        <activity
+            android:name=".DictionaryApp"
+            android:exported="false" />
+        <activity
+            android:name=".NumberListApp"
+            android:exported="false" />
+        <activity
             android:name=".BMIApp"
             android:exported="false" />
         <activity
@@ -25,9 +34,6 @@
             android:exported="false"
             android:label="@string/title_activity_mail_using_jetpack_compose"
             android:theme="@style/Theme.TraineeingProject" />
-        <activity
-            android:name=".MailWithJetpackCompose"
-            android:exported="false" />
         <activity
             android:name=".Calculator"
             android:exported="false" />

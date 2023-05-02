@@ -22,5 +22,7 @@
     <string name="button_text_view">calculate</string>
     <string name="todo">TODO</string>
 
+    <string name="edit_text_string">Search Your Word</string>
+    <string name="button_text">Find</string>
 
 </resources>
