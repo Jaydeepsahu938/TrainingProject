@@ -1,5 +1,6 @@
 package com.example.traineeingproject
 
+import android.annotation.SuppressLint
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -65,10 +66,11 @@ class NumberAdapter:BaseAdapter{
        return position.toLong()
     }
 
+    @SuppressLint("SuspiciousIndentation")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View? {
       var view:View
       val inflater:LayoutInflater= context?.getSystemService(Context1.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-      var holder:ViewHolder
+      val holder:ViewHolder
 
         if(convertView==null)
         {

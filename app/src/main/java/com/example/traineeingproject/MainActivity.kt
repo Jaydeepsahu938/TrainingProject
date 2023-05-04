@@ -59,7 +59,12 @@ class MainActivity : AppCompatActivity() {
             val Intent = Intent(this, NumberListApp::class.java)
             startActivity(Intent)
         }
-        val btn_DictionaryApp = findViewById<Button>(R.id.btn10)
+        val btn_MultiViewTypeRecyclerView= findViewById<Button>(R.id.btn10)
+        btn_MultiViewTypeRecyclerView.setOnClickListener {
+            val Intent = Intent(this,NumberListUsingRecyclerView::class.java)
+            startActivity(Intent)
+        }
+        val btn_DictionaryApp = findViewById<Button>(R.id.btn11)
         btn_DictionaryApp.setOnClickListener {
             val Intent = Intent(this, DictionaryApp::class.java)
             startActivity(Intent)

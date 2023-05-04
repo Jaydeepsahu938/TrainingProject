@@ -12,6 +12,9 @@
         android:theme="@style/Theme.TraineeingProject"
         tools:targetApi="31">
         <activity
+            android:name=".NumberListUsingRecyclerView"
+            android:exported="false" />
+        <activity
             android:name=".Defination"
             android:exported="false" />
         <activity
