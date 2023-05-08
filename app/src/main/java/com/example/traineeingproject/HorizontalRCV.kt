@@ -4,26 +4,24 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.traineeingproject.databinding.ActivityNumberListUsingRecyclerViewBinding
+import com.example.traineeingproject.databinding.ActivityBmiappBinding
+import com.example.traineeingproject.databinding.ActivityHorizontalRcvBinding
 
-class NumberListUsingRecyclerView : AppCompatActivity() {
-    private val nrBinding by lazy {
-        ActivityNumberListUsingRecyclerViewBinding.inflate(LayoutInflater.from(this))
+class HorizontalRCV : AppCompatActivity() {
+    private val hBinding by lazy {
+      ActivityHorizontalRcvBinding.inflate(LayoutInflater.from(this))
     }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(nrBinding.root)
+        setContentView(hBinding.root)
 
         var list: ArrayList<Data> = gererateData()
-        var recyclerView = nrBinding.recyclerview
-        var adapter: RecyclerviewItemAdapter = RecyclerviewItemAdapter(list,this)
+        var recyclerView = hBinding.horizontalRecyclerView
+        var adapter: RecyclerviewItemAdapter = RecyclerviewItemAdapter(list, baseContext)
         recyclerView.adapter = adapter
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
 
     }
-
     private fun gererateData(): ArrayList<Data> {
         // ArrayList<Number> mList = new ArrayList();
         var mList: ArrayList<Data> = ArrayList()
@@ -41,6 +39,4 @@ class NumberListUsingRecyclerView : AppCompatActivity() {
 
         return mList
     }
-
-
 }

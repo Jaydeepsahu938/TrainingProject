@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import com.example.traineeingproject.databinding.ActivityBmiappBinding
 import com.example.traineeingproject.databinding.ActivityExViewBindingBinding
@@ -30,6 +31,7 @@ class BMIApp : AppCompatActivity() {
         val Num_eighteen: Double = 18.5
         val Num_twentyfour: Double = 24.9
         val Num_nintynine: Double = 18.5
+        val text:TextView=mBinding.bmiTextView
 
             val obj_weight = mBinding.weightTextView.text.toString()
             if (!TextUtils.isEmpty(obj_weight)) {
@@ -43,6 +45,7 @@ class BMIApp : AppCompatActivity() {
 
 
         myBMI = calculateBMI(weight, height)       //calculate BMI
+        text.setText(myBMI.toString()).toString()
         if (myBMI < Num_eighteen) mBinding.imageView.setImageResource(R.drawable.underweight)
         else if (myBMI > Num_eighteen && myBMI < Num_twentyfour) mBinding.imageView.setImageResource(
             R.drawable.healthy
@@ -58,4 +61,6 @@ class BMIApp : AppCompatActivity() {
         return ((weight * 0.45) / ((height * 0.025) * (height * 0.025))).toFloat()
     }
 }
+
+
 

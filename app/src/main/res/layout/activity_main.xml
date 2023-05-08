@@ -92,6 +92,28 @@
             android:layout_margin="16dp"
             android:text="DICTIONARY APP"
             android:layout_below="@+id/btn10" />
+        <Button
+            android:id="@+id/btn12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Activity LifeCycle"
+            android:layout_below="@+id/btn11" />
+        <Button
+            android:id="@+id/btn13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Horizontal Recyclerview"
+            android:layout_below="@+id/btn12" />
+        <Button
+            android:id="@+id/btn14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="MultiView Recyclerview"
+            android:layout_below="@+id/btn13" />
+
     </RelativeLayout>
 </ScrollView>
 

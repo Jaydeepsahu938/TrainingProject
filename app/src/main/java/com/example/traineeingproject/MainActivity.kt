@@ -1,12 +1,15 @@
 package com.example.traineeingproject
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import java.util.Dictionary
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -69,5 +72,19 @@ class MainActivity : AppCompatActivity() {
             val Intent = Intent(this, DictionaryApp::class.java)
             startActivity(Intent)
         }
+        val btn_ALC = findViewById<Button>(R.id.btn12)
+        btn_ALC.setOnClickListener {
+            val Intent = Intent(this,LifeCycleAvt::class.java)
+            startActivity(Intent)
+        }
+        val btn_hrv=findViewById<Button>(R.id.btn13)
+        btn_hrv.setOnClickListener{
+            val Intent = Intent(this,HorizontalRCV::class.java)
+            startActivity(Intent) }
+        val btn_mvrv=findViewById<Button>(R.id.btn14)
+        btn_mvrv.setOnClickListener{
+            val Intent = Intent(this,MultiViewRecyclerView::class.java)
+            startActivity(Intent) }
     }
+
 }
