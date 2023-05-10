@@ -85,6 +85,14 @@ class MainActivity : AppCompatActivity() {
         btn_mvrv.setOnClickListener{
             val Intent = Intent(this,MultiViewRecyclerView::class.java)
             startActivity(Intent) }
+        val btn_dailogs=findViewById<Button>(R.id.btn15)
+        btn_dailogs.setOnClickListener{
+            val Intent = Intent(this,Dailogs::class.java)
+            startActivity(Intent) }
+        val btn_retrofit=findViewById<Button>(R.id.btn16)
+        btn_retrofit.setOnClickListener{
+            val Intent = Intent(this,RetrofitEx::class.java)
+            startActivity(Intent) }
     }
 
 }

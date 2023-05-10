@@ -113,6 +113,20 @@
             android:layout_margin="16dp"
             android:text="MultiView Recyclerview"
             android:layout_below="@+id/btn13" />
+        <Button
+            android:id="@+id/btn15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Dailogs"
+            android:layout_below="@+id/btn14" />
+        <Button
+            android:id="@+id/btn16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Retrofit Ex"
+            android:layout_below="@+id/btn15" />
 
     </RelativeLayout>
 </ScrollView>
